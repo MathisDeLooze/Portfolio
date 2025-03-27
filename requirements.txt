@@ -13,3 +13,4 @@ reportlab
 feedparser
 statsmodels
 fpdf
+kaleido
