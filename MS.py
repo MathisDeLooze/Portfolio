@@ -543,7 +543,7 @@ def generate_pdf_report(fig, df_abs_stats, df_metrics, weights_dict, ticker_to_n
         return str(text).replace("–", "-").replace("’", "'").replace("‘", "'")
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmpfile:
-    fig.write_image(tmpfile.name)   # ❌ fonctionne pas sans Kaleido
+        fig.write_image(tmpfile.name)   # ❌ fonctionne pas sans Kaleido
 
     pdf = FPDF()
     pdf.add_page()
